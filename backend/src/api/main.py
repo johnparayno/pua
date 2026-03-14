@@ -3,6 +3,7 @@ from typing import Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
@@ -127,3 +128,11 @@ def create_vote(
         raise HTTPException(status_code=500, detail="Failed to persist vote")
 
     return vote
+
+
+# Serve frontend static files (same origin as API for production deploy)
+_frontend_path = os.path.join(
+    os.path.dirname(__file__), "..", "..", "..", "frontend"
+)
+if os.path.exists(_frontend_path):
+    app.mount("/", StaticFiles(directory=_frontend_path, html=True), name="frontend")
