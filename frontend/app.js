@@ -395,6 +395,29 @@ document.addEventListener('DOMContentLoaded', () => {
   retryFetchBtn?.addEventListener('click', () => loadNext());
   retryVoteBtn?.addEventListener('click', () => retryVote());
 
+  // Info overlay: glossary of PUA terms
+  const infoBtn = document.getElementById('info-btn');
+  const infoOverlay = document.getElementById('info-overlay');
+  const infoClose = document.getElementById('info-close');
+  function openInfoOverlay() {
+    infoOverlay?.classList.remove('hidden');
+    infoBtn?.setAttribute('aria-expanded', 'true');
+  }
+  function closeInfoOverlay() {
+    infoOverlay?.classList.add('hidden');
+    infoBtn?.setAttribute('aria-expanded', 'false');
+  }
+  infoBtn?.addEventListener('click', openInfoOverlay);
+  infoClose?.addEventListener('click', closeInfoOverlay);
+  infoOverlay?.addEventListener('click', (e) => {
+    if (e.target === infoOverlay) closeInfoOverlay();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && infoOverlay && !infoOverlay.classList.contains('hidden')) {
+      closeInfoOverlay();
+    }
+  });
+
   // Touch swipe: right = up, left = down
   let touchStartX = 0;
   const SWIPE_THRESHOLD = 60;

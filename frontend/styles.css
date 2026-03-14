@@ -262,3 +262,107 @@ main.transition-in .content-text {
 .vote-error-overlay button:hover {
   background: #fff;
 }
+
+/* Info icon: upper left corner */
+.info-btn {
+  position: fixed;
+  top: clamp(0.5rem, 2vw, 1rem);
+  left: clamp(0.5rem, 2vw, 1rem);
+  z-index: 20;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.info-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.08);
+}
+
+.info-btn:active {
+  transform: scale(0.95);
+}
+
+/* Info overlay */
+.info-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 2rem);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.info-overlay.hidden {
+  display: none !important;
+}
+
+.info-overlay-content {
+  background: #fff;
+  max-width: min(28rem, 95vw);
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 1.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+.info-overlay-content h2 {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.info-glossary {
+  margin: 0 0 1.25rem;
+}
+
+.info-glossary dt {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.info-glossary dt:first-child {
+  margin-top: 0;
+}
+
+.info-glossary dd {
+  margin: 0.25rem 0 0;
+  line-height: 1.55;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.info-close-btn {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.info-close-btn:hover {
+  background: #f8fafc;
+}

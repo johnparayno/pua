@@ -13,6 +13,31 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Info icon: upper left corner -->
+  <button id="info-btn" type="button" class="info-btn" aria-label="Show glossary and definitions" aria-expanded="false" aria-haspopup="dialog">
+    <span aria-hidden="true">ℹ️</span>
+  </button>
+  <!-- Info overlay: glossary of PUA terms -->
+  <div id="info-overlay" class="info-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="info-overlay-title">
+    <div class="info-overlay-content">
+      <h2 id="info-overlay-title">Glossary</h2>
+      <dl class="info-glossary">
+        <dt>Pickup Artist (PUA)</dt>
+        <dd>Someone who practices or studies techniques for meeting and attracting romantic partners. The term became popular in the early 2000s with the rise of the seduction community.</dd>
+        <dt>Neg</dt>
+        <dd>A backhanded compliment or playful tease used to lower someone's perceived status slightly. The idea is to stand out by not fawning over an attractive person, making you seem more interesting and less needy.</dd>
+        <dt>Opener</dt>
+        <dd>A line or routine used to start a conversation with someone you don't know. Can be direct (compliment) or indirect (observation, question).</dd>
+        <dt>DHV</dt>
+        <dd>Demonstration of Higher Value — actions or stories that show you're interesting, successful, or desirable without bragging.</dd>
+        <dt>IOI</dt>
+        <dd>Indicator of Interest — signs that someone is attracted to you (eye contact, leaning in, touching their hair, asking questions).</dd>
+        <dt>Kino</dt>
+        <dd>Physical touch used to build attraction and escalate intimacy, e.g. light touches on the arm or shoulder.</dd>
+      </dl>
+      <button id="info-close" type="button" class="info-close-btn" aria-label="Close glossary">Close</button>
+    </div>
+  </div>
   <main role="main" aria-live="polite" class="bg-variant-0">
     <!-- T023: Loading state -->
     <div id="loading-state" class="state-panel loading-state" aria-live="polite">
