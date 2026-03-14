@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#5a67d8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="pua">
+  <title>pua</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main role="main" aria-live="polite" class="bg-variant-0">
+    <!-- T023: Loading state -->
+    <div id="loading-state" class="state-panel loading-state" aria-live="polite">
+      <p class="loading-text">Loading…</p>
+    </div>
+    <!-- T024: Error state -->
+    <div id="error-state" class="state-panel error-state hidden">
+      <p class="error-message">Something went wrong. Please try again.</p>
+      <button id="retry-fetch" type="button" aria-label="Retry loading content">Retry</button>
+    </div>
+    <!-- T025: Empty state -->
+    <div id="empty-state" class="state-panel empty-state hidden">
+      <p class="empty-message">No content available.</p>
+    </div>
+    <!-- Content display (T029: aria-live announces new content to screen readers) -->
+    <blockquote id="content-block" class="content-block hidden" aria-live="polite" aria-atomic="true">
+      <p id="content-text" class="content-text"></p>
+    </blockquote>
+    <div class="vote-buttons">
+      <button id="thumbs-down" type="button" aria-label="Thumbs down">
+        <span aria-hidden="true">👎</span>
+      </button>
+      <button id="thumbs-up" type="button" aria-label="Thumbs up">
+        <span aria-hidden="true">👍</span>
+      </button>
+    </div>
+    <!-- Vote feedback overlays (confetti / booh) -->
+    <div id="vote-feedback-overlay" class="vote-feedback-overlay hidden" aria-hidden="true">
+      <canvas id="confetti-canvas"></canvas>
+      <div id="booh-feedback" class="booh-feedback hidden">
+        <span class="booh-emoji">😢</span>
+        <span class="booh-text">booh</span>
+      </div>
+    </div>
+    <!-- T026: Vote failure overlay -->
+    <div id="vote-error-overlay" class="vote-error-overlay hidden">
+      <p>Vote failed. Please try again.</p>
+      <button id="retry-vote" type="button" aria-label="Retry vote">Retry vote</button>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

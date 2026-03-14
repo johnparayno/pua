@@ -1,0 +1,31 @@
+id,text,category,tone,template_type,intensity,status,rating_score,uses_count,skips_count,cringe_count,risky_count,favorite_count
+1,Nice nails. Are they real?,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+2,Nice nails. You did those yourself?,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+3,Nice shoes. Those must be comfortable.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+4,Nice outfit. That’s actually pretty bold.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+5,Nice smile. Is that your secret weapon?,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+6,Nice hair. Did it take long to get it like that?,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+7,Nice jacket. My little sister has one like that.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+8,Nice style. That’s brave.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+9,Nice earrings. Are they vintage or ironic?,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+10,Nice glasses. Are those part of the look?,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+11,"Let me guess, you're the sarcastic one in your group.",classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+12,"Let me guess, you're the one who gets everyone into trouble.",classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+13,"Let me guess, you're the competitive one.",classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+14,"Let me guess, you're the adventurous friend.",classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+15,"Let me guess, you're the one who talks people into bad ideas.",classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+16,You seem confident. Is that natural or practiced?,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+17,You seem like trouble.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+18,You seem like you get bored easily.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+19,You seem hard to impress.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+20,You seem like the one who starts arguments.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+21,You seem like the kind of person people regret meeting.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+22,You seem dangerous.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+23,You seem like a bad influence.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+24,You seem like someone who causes problems.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+25,You seem like chaos in human form.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+26,"You seem interesting, but you also seem like trouble.",classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+27,I usually avoid girls like you.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+28,You seem like someone I should probably stay away from.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+29,You seem like a bad idea.,classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0
+30,"You seem fun, but probably exhausting.",classic_neg,edgy,classic_pickup_neg,3,approved,0,0,0,0,0,0

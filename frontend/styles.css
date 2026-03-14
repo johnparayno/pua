@@ -1,0 +1,264 @@
+/* pua - Base styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100dvh;
+}
+
+/* T019: Responsive layout - viewport units, max-width, padding for mobile/desktop */
+main {
+  min-height: 100dvh;
+  min-height: 100vh; /* fallback for older browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 2rem);
+  transition: background-color 0.4s ease;
+}
+
+/* Deterministic background variants per content item id */
+.bg-variant-0 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.bg-variant-1 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.bg-variant-2 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.bg-variant-3 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+.bg-variant-4 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+.bg-variant-5 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+
+/* T022: Mobile - solid backgrounds where gradients reduce readability */
+@media (max-width: 768px) {
+  .bg-variant-0 { background: #5a67d8; }
+  .bg-variant-1 { background: #ed64a6; }
+  .bg-variant-2 { background: #4299e1; }
+  .bg-variant-3 { background: #48bb78; }
+  .bg-variant-4 { background: #ed8936; }
+  .bg-variant-5 { background: #b2f5ea; }
+}
+
+/* Quote-style content block */
+.content-block {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+  max-width: min(42rem, 92vw);
+}
+
+/* T020: Text contrast and legibility - responsive font, weight, contrast per variant */
+.content-text {
+  font-size: clamp(1.375rem, 3vw + 1.2rem, 2rem);
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Dark backgrounds (0,1,2): light text for contrast */
+.bg-variant-0 .content-text,
+.bg-variant-1 .content-text,
+.bg-variant-2 .content-text {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Light backgrounds (3,4,5): dark text for contrast */
+.bg-variant-3 .content-text,
+.bg-variant-4 .content-text,
+.bg-variant-5 .content-text {
+  color: rgba(0, 0, 0, 0.9);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+/* T021: Buttons - min 44px touch target per mobile UX */
+.vote-buttons {
+  display: flex;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  padding: clamp(1rem, 3vw, 1.5rem) 0;
+}
+
+.vote-buttons button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.75rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.vote-buttons button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.vote-buttons button:active {
+  transform: scale(0.98);
+}
+
+/* Transition animation between items */
+main.transition-out .content-text {
+  opacity: 0;
+}
+
+main.transition-in .content-text {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* T023–T026: Loading, error, empty, vote-error states */
+.hidden {
+  display: none !important;
+}
+
+.state-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+  max-width: min(42rem, 92vw);
+  text-align: center;
+}
+
+.loading-state .loading-text,
+.error-state .error-message,
+.empty-state .empty-message {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin: 0 0 1rem;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.loading-state .loading-text {
+  margin-bottom: 0;
+}
+
+.error-state button,
+.empty-state button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.error-state button:hover,
+.empty-state button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Vote feedback overlays - confetti (thumbs up) and booh (thumbs down) */
+.vote-feedback-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+#confetti-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.booh-feedback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  animation: boohShake 0.6s ease-out;
+}
+
+.booh-emoji {
+  font-size: 4rem;
+  animation: boohBounce 0.4s ease-out 0.2s both;
+}
+
+.booh-text {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  animation: boohFadeIn 0.3s ease-out 0.3s both;
+}
+
+@keyframes boohShake {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-12px) rotate(-3deg); }
+  30% { transform: translateX(10px) rotate(2deg); }
+  45% { transform: translateX(-8px) rotate(-2deg); }
+  60% { transform: translateX(6px) rotate(1deg); }
+  75% { transform: translateX(-4px); }
+}
+
+@keyframes boohBounce {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.15); }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes boohFadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.vote-error-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  z-index: 10;
+}
+
+.vote-error-overlay p {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+}
+
+.vote-error-overlay button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  cursor: pointer;
+}
+
+.vote-error-overlay button:hover {
+  background: #fff;
+}

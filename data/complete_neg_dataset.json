@@ -1,0 +1,1928 @@
+{
+  "savage_negs": [
+    {
+      "id": 1,
+      "text": "Savage neg #1: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 2,
+      "text": "Savage neg #2: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 3,
+      "text": "Savage neg #3: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 4,
+      "text": "Savage neg #4: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 5,
+      "text": "Savage neg #5: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 6,
+      "text": "Savage neg #6: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 7,
+      "text": "Savage neg #7: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 8,
+      "text": "Savage neg #8: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 9,
+      "text": "Savage neg #9: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 10,
+      "text": "Savage neg #10: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 11,
+      "text": "Savage neg #11: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 12,
+      "text": "Savage neg #12: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 13,
+      "text": "Savage neg #13: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 14,
+      "text": "Savage neg #14: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 15,
+      "text": "Savage neg #15: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 16,
+      "text": "Savage neg #16: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 17,
+      "text": "Savage neg #17: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 18,
+      "text": "Savage neg #18: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 19,
+      "text": "Savage neg #19: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 20,
+      "text": "Savage neg #20: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 21,
+      "text": "Savage neg #21: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 22,
+      "text": "Savage neg #22: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 23,
+      "text": "Savage neg #23: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 24,
+      "text": "Savage neg #24: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 25,
+      "text": "Savage neg #25: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 26,
+      "text": "Savage neg #26: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 27,
+      "text": "Savage neg #27: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 28,
+      "text": "Savage neg #28: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 29,
+      "text": "Savage neg #29: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 30,
+      "text": "Savage neg #30: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 31,
+      "text": "Savage neg #31: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 32,
+      "text": "Savage neg #32: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 33,
+      "text": "Savage neg #33: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 34,
+      "text": "Savage neg #34: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 35,
+      "text": "Savage neg #35: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 36,
+      "text": "Savage neg #36: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 37,
+      "text": "Savage neg #37: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 38,
+      "text": "Savage neg #38: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 39,
+      "text": "Savage neg #39: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 40,
+      "text": "Savage neg #40: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 41,
+      "text": "Savage neg #41: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 42,
+      "text": "Savage neg #42: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 43,
+      "text": "Savage neg #43: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 44,
+      "text": "Savage neg #44: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 45,
+      "text": "Savage neg #45: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 46,
+      "text": "Savage neg #46: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 47,
+      "text": "Savage neg #47: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 48,
+      "text": "Savage neg #48: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 49,
+      "text": "Savage neg #49: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 50,
+      "text": "Savage neg #50: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 51,
+      "text": "Savage neg #51: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 52,
+      "text": "Savage neg #52: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 53,
+      "text": "Savage neg #53: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 54,
+      "text": "Savage neg #54: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 55,
+      "text": "Savage neg #55: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 56,
+      "text": "Savage neg #56: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 57,
+      "text": "Savage neg #57: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 58,
+      "text": "Savage neg #58: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 59,
+      "text": "Savage neg #59: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 60,
+      "text": "Savage neg #60: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 61,
+      "text": "Savage neg #61: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 62,
+      "text": "Savage neg #62: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 63,
+      "text": "Savage neg #63: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 64,
+      "text": "Savage neg #64: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 65,
+      "text": "Savage neg #65: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 66,
+      "text": "Savage neg #66: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 67,
+      "text": "Savage neg #67: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 68,
+      "text": "Savage neg #68: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 69,
+      "text": "Savage neg #69: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 70,
+      "text": "Savage neg #70: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 71,
+      "text": "Savage neg #71: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 72,
+      "text": "Savage neg #72: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 73,
+      "text": "Savage neg #73: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 74,
+      "text": "Savage neg #74: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 75,
+      "text": "Savage neg #75: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 76,
+      "text": "Savage neg #76: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 77,
+      "text": "Savage neg #77: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 78,
+      "text": "Savage neg #78: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 79,
+      "text": "Savage neg #79: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 80,
+      "text": "Savage neg #80: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 81,
+      "text": "Savage neg #81: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 82,
+      "text": "Savage neg #82: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 83,
+      "text": "Savage neg #83: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 84,
+      "text": "Savage neg #84: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 85,
+      "text": "Savage neg #85: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 86,
+      "text": "Savage neg #86: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 87,
+      "text": "Savage neg #87: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 88,
+      "text": "Savage neg #88: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 89,
+      "text": "Savage neg #89: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 90,
+      "text": "Savage neg #90: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 91,
+      "text": "Savage neg #91: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 92,
+      "text": "Savage neg #92: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 93,
+      "text": "Savage neg #93: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 94,
+      "text": "Savage neg #94: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 95,
+      "text": "Savage neg #95: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 96,
+      "text": "Savage neg #96: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 97,
+      "text": "Savage neg #97: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 98,
+      "text": "Savage neg #98: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 99,
+      "text": "Savage neg #99: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    },
+    {
+      "id": 100,
+      "text": "Savage neg #100: You seem like the kind of person who enjoys chaos a little too much.",
+      "category": "classic_neg",
+      "tone": "edgy",
+      "template_type": "savage_neg",
+      "intensity": 5
+    }
+  ],
+  "situational_negs": [
+    {
+      "id": 1,
+      "text": "Situational neg #1: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 2,
+      "text": "Situational neg #2: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 3,
+      "text": "Situational neg #3: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 4,
+      "text": "Situational neg #4: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 5,
+      "text": "Situational neg #5: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 6,
+      "text": "Situational neg #6: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 7,
+      "text": "Situational neg #7: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 8,
+      "text": "Situational neg #8: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 9,
+      "text": "Situational neg #9: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 10,
+      "text": "Situational neg #10: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 11,
+      "text": "Situational neg #11: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 12,
+      "text": "Situational neg #12: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 13,
+      "text": "Situational neg #13: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 14,
+      "text": "Situational neg #14: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 15,
+      "text": "Situational neg #15: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 16,
+      "text": "Situational neg #16: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 17,
+      "text": "Situational neg #17: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 18,
+      "text": "Situational neg #18: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 19,
+      "text": "Situational neg #19: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 20,
+      "text": "Situational neg #20: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 21,
+      "text": "Situational neg #21: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 22,
+      "text": "Situational neg #22: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 23,
+      "text": "Situational neg #23: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 24,
+      "text": "Situational neg #24: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 25,
+      "text": "Situational neg #25: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 26,
+      "text": "Situational neg #26: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 27,
+      "text": "Situational neg #27: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 28,
+      "text": "Situational neg #28: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 29,
+      "text": "Situational neg #29: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 30,
+      "text": "Situational neg #30: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 31,
+      "text": "Situational neg #31: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 32,
+      "text": "Situational neg #32: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 33,
+      "text": "Situational neg #33: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 34,
+      "text": "Situational neg #34: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 35,
+      "text": "Situational neg #35: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 36,
+      "text": "Situational neg #36: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 37,
+      "text": "Situational neg #37: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 38,
+      "text": "Situational neg #38: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 39,
+      "text": "Situational neg #39: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 40,
+      "text": "Situational neg #40: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 41,
+      "text": "Situational neg #41: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 42,
+      "text": "Situational neg #42: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 43,
+      "text": "Situational neg #43: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 44,
+      "text": "Situational neg #44: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 45,
+      "text": "Situational neg #45: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 46,
+      "text": "Situational neg #46: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 47,
+      "text": "Situational neg #47: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 48,
+      "text": "Situational neg #48: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 49,
+      "text": "Situational neg #49: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 50,
+      "text": "Situational neg #50: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 51,
+      "text": "Situational neg #51: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 52,
+      "text": "Situational neg #52: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 53,
+      "text": "Situational neg #53: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 54,
+      "text": "Situational neg #54: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 55,
+      "text": "Situational neg #55: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 56,
+      "text": "Situational neg #56: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 57,
+      "text": "Situational neg #57: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 58,
+      "text": "Situational neg #58: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 59,
+      "text": "Situational neg #59: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 60,
+      "text": "Situational neg #60: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 61,
+      "text": "Situational neg #61: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 62,
+      "text": "Situational neg #62: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 63,
+      "text": "Situational neg #63: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 64,
+      "text": "Situational neg #64: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 65,
+      "text": "Situational neg #65: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 66,
+      "text": "Situational neg #66: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 67,
+      "text": "Situational neg #67: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 68,
+      "text": "Situational neg #68: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 69,
+      "text": "Situational neg #69: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 70,
+      "text": "Situational neg #70: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 71,
+      "text": "Situational neg #71: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 72,
+      "text": "Situational neg #72: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 73,
+      "text": "Situational neg #73: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 74,
+      "text": "Situational neg #74: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 75,
+      "text": "Situational neg #75: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 76,
+      "text": "Situational neg #76: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 77,
+      "text": "Situational neg #77: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 78,
+      "text": "Situational neg #78: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 79,
+      "text": "Situational neg #79: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 80,
+      "text": "Situational neg #80: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 81,
+      "text": "Situational neg #81: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 82,
+      "text": "Situational neg #82: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 83,
+      "text": "Situational neg #83: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 84,
+      "text": "Situational neg #84: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 85,
+      "text": "Situational neg #85: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 86,
+      "text": "Situational neg #86: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 87,
+      "text": "Situational neg #87: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 88,
+      "text": "Situational neg #88: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 89,
+      "text": "Situational neg #89: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 90,
+      "text": "Situational neg #90: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    },
+    {
+      "id": 91,
+      "text": "Situational neg #91: You look like someone who causes mild trouble in a club.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "club",
+      "intensity": 4
+    },
+    {
+      "id": 92,
+      "text": "Situational neg #92: You look like someone who causes mild trouble in a coffee_shop.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "coffee_shop",
+      "intensity": 4
+    },
+    {
+      "id": 93,
+      "text": "Situational neg #93: You look like someone who causes mild trouble in a tinder.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "tinder",
+      "intensity": 4
+    },
+    {
+      "id": 94,
+      "text": "Situational neg #94: You look like someone who causes mild trouble in a gym.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "gym",
+      "intensity": 4
+    },
+    {
+      "id": 95,
+      "text": "Situational neg #95: You look like someone who causes mild trouble in a party.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "party",
+      "intensity": 4
+    },
+    {
+      "id": 96,
+      "text": "Situational neg #96: You look like someone who causes mild trouble in a bookstore.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bookstore",
+      "intensity": 4
+    },
+    {
+      "id": 97,
+      "text": "Situational neg #97: You look like someone who causes mild trouble in a street.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "street",
+      "intensity": 4
+    },
+    {
+      "id": 98,
+      "text": "Situational neg #98: You look like someone who causes mild trouble in a concert.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "concert",
+      "intensity": 4
+    },
+    {
+      "id": 99,
+      "text": "Situational neg #99: You look like someone who causes mild trouble in a restaurant.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "restaurant",
+      "intensity": 4
+    },
+    {
+      "id": 100,
+      "text": "Situational neg #100: You look like someone who causes mild trouble in a bar.",
+      "category": "situational_neg",
+      "tone": "edgy",
+      "template_type": "bar",
+      "intensity": 4
+    }
+  ],
+  "trigger_negs": [
+    {
+      "id": 1,
+      "text": "You look like someone who asks for the manager before the problem even starts.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 2,
+      "text": "You look like someone who reads the rules just so you can enforce them.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 3,
+      "text": "You seem like the kind of person who enjoys correcting strangers.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 4,
+      "text": "You look like someone who brings policies into casual conversations.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 5,
+      "text": "You seem like someone who says 'technically\u2026' a lot.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 6,
+      "text": "You look like someone who enjoys being offended on behalf of others.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 7,
+      "text": "You seem like the kind of person who audits jokes.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 8,
+      "text": "You look like someone who pauses movies to explain why something is problematic.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 9,
+      "text": "You seem like someone who reads comment sections for sport.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 10,
+      "text": "You look like someone who enjoys correcting people's tone.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 11,
+      "text": "You seem like someone who reports things instead of ignoring them.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 12,
+      "text": "You look like someone who reads terms and conditions for fun.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 13,
+      "text": "You seem like someone who starts emails with 'per policy.'",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 14,
+      "text": "You look like someone who enjoys escalating things.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 15,
+      "text": "You seem like someone who collects small victories in arguments.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 16,
+      "text": "You look like someone who fact-checks casual conversation.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 17,
+      "text": "You seem like someone who enjoys pointing out technicalities.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 18,
+      "text": "You look like someone who says 'actually\u2026' a lot.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 19,
+      "text": "You seem like someone who enjoys being the referee.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 20,
+      "text": "You look like someone who enforces unwritten rules.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 21,
+      "text": "You seem like someone who brings structure into chaos.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 22,
+      "text": "You look like someone who keeps mental score.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 23,
+      "text": "You seem like someone who remembers exactly what people said.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 24,
+      "text": "You look like someone who debates strangers online.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 25,
+      "text": "You seem like someone who writes long comments.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 26,
+      "text": "You look like someone who enjoys correcting headlines.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 27,
+      "text": "You seem like someone who argues with algorithms.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 28,
+      "text": "You look like someone who explains jokes.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 29,
+      "text": "You seem like someone who polices sarcasm.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 30,
+      "text": "You look like someone who audits conversations.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 31,
+      "text": "You seem like someone who enjoys pointing out contradictions.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 32,
+      "text": "You look like someone who enjoys the debate more than the topic.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 33,
+      "text": "You seem like someone who enjoys being technically correct.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 34,
+      "text": "You look like someone who says 'that's not the point.'",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 35,
+      "text": "You seem like someone who enjoys correcting phrasing.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 36,
+      "text": "You look like someone who escalates things politely.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 37,
+      "text": "You seem like someone who enjoys the complaint form.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 38,
+      "text": "You look like someone who writes reviews longer than the experience.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 39,
+      "text": "You seem like someone who enjoys reporting things.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    },
+    {
+      "id": 40,
+      "text": "You look like someone who enjoys moderating conversations.",
+      "category": "trigger_neg",
+      "tone": "edgy",
+      "template_type": "behavior_trigger",
+      "intensity": 4
+    }
+  ]
+}
