@@ -389,3 +389,79 @@ main.transition-in .content-text {
 .info-close-btn:hover {
   background: #f8fafc;
 }
+
+/* Add to Home Screen banner */
+.install-banner {
+  position: fixed;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  max-width: min(22rem, 92vw);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 0.75rem;
+  color: #fff;
+  z-index: 18;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.install-banner.hidden {
+  display: none !important;
+}
+
+.install-banner-text {
+  flex: 1;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.install-banner-action {
+  flex-shrink: 0;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.install-banner-action:hover {
+  background: #fff;
+}
+
+.install-banner-dismiss {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.install-banner-dismiss:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Banner above fixed vote buttons on mobile */
+@media (max-width: 768px) {
+  .install-banner {
+    bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 4rem);
+  }
+}

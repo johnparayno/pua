@@ -78,6 +78,12 @@
       <button id="retry-vote" type="button" aria-label="Retry vote">Retry vote</button>
     </div>
   </main>
+  <!-- Add to Home Screen prompt (PWA install banner) -->
+  <div id="install-banner" class="install-banner hidden" role="region" aria-label="Add to Home Screen">
+    <p id="install-banner-text" class="install-banner-text"></p>
+    <button id="install-banner-action" type="button" class="install-banner-action">Add</button>
+    <button id="install-banner-dismiss" type="button" class="install-banner-dismiss" aria-label="Dismiss">×</button>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

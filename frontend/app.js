@@ -244,6 +244,64 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').catch(() => {});
 }
 
+/** Add to Home Screen banner — show after first vote, platform-specific */
+const INSTALL_DISMISSED_KEY = 'pua_install_dismissed';
+
+function isStandalone() {
+  return (
+    window.matchMedia('(display-mode: standalone)').matches ||
+    window.navigator.standalone === true
+  );
+}
+
+function isIOS() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+}
+
+function wasInstallDismissed() {
+  try {
+    return localStorage.getItem(INSTALL_DISMISSED_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function setInstallDismissed() {
+  try {
+    localStorage.setItem(INSTALL_DISMISSED_KEY, '1');
+  } catch (_) {}
+}
+
+function maybeShowInstallBanner(deferredPrompt) {
+  if (isStandalone() || wasInstallDismissed() || !isMobile()) return;
+  const banner = document.getElementById('install-banner');
+  const textEl = document.getElementById('install-banner-text');
+  const actionBtn = document.getElementById('install-banner-action');
+  if (!banner || !textEl || !actionBtn) return;
+
+  if (deferredPrompt) {
+    textEl.textContent = 'Add to home screen for quick access and offline use.';
+    actionBtn.textContent = 'Add';
+  } else if (isIOS()) {
+    textEl.textContent = 'Add to Home Screen: tap Share, then "Add to Home Screen".';
+    actionBtn.textContent = 'Got it';
+  } else {
+    textEl.textContent = 'Add to home screen for quick access and offline use.';
+    actionBtn.textContent = 'Got it';
+  }
+  banner.classList.remove('hidden');
+}
+
+let deferredInstallPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('main');
   const contentEl = document.getElementById('content-text');
@@ -265,6 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let isTransitioning = false;
   let pendingVote = null; // { id, voteType } for retry
   let offlineContent = []; // Cached for offline use
+  let hasVotedOnce = false; // For install banner: show after first vote
 
   function showState(which) {
     loadingState?.classList.toggle('hidden', which !== 'loading');
@@ -382,6 +441,10 @@ document.addEventListener('DOMContentLoaded', () => {
         await storeVoteOffline(id, voteType);
       }
       pendingVote = null;
+      if (!hasVotedOnce) {
+        hasVotedOnce = true;
+        maybeShowInstallBanner(deferredInstallPrompt);
+      }
       loadNext(voteType);
     } catch (err) {
       console.error('Vote failed:', err);
@@ -407,6 +470,10 @@ document.addEventListener('DOMContentLoaded', () => {
         await storeVoteOffline(id, voteType);
       }
       pendingVote = null;
+      if (!hasVotedOnce) {
+        hasVotedOnce = true;
+        maybeShowInstallBanner(deferredInstallPrompt);
+      }
       loadNext(voteType);
     } catch (err) {
       console.error('Vote retry failed:', err);
@@ -446,6 +513,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape' && infoOverlay && !infoOverlay.classList.contains('hidden')) {
       closeInfoOverlay();
     }
+  });
+
+  // Install banner: Add to Home Screen
+  const installBanner = document.getElementById('install-banner');
+  const installBannerAction = document.getElementById('install-banner-action');
+  const installBannerDismiss = document.getElementById('install-banner-dismiss');
+  installBannerAction?.addEventListener('click', async () => {
+    if (deferredInstallPrompt) {
+      deferredInstallPrompt.prompt();
+      const { outcome } = await deferredInstallPrompt.userChoice;
+      if (outcome === 'accepted') deferredInstallPrompt = null;
+    }
+    installBanner?.classList.add('hidden');
+    setInstallDismissed();
+  });
+  installBannerDismiss?.addEventListener('click', () => {
+    installBanner?.classList.add('hidden');
+    setInstallDismissed();
   });
 
   // Touch swipe: right = up, left = down
