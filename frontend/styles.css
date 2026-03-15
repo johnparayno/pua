@@ -38,9 +38,11 @@ main {
   .bg-variant-3 { background: linear-gradient(180deg, #48bb78 0%, #5ac88a 50%, #3aa868 100%); }
   .bg-variant-4 { background: linear-gradient(180deg, #ed8936 0%, #f09a50 50%, #dd7a26 100%); }
   .bg-variant-5 { background: linear-gradient(180deg, #b2f5ea 0%, #c4f8ef 50%, #a0e8dc 100%); }
-  /* Info icon: push down to avoid iPhone notch/safe area */
+  /* Info icon: upper right, below status bar (avoids notch; clickable in PWA standalone) */
   .info-btn {
-    top: calc(clamp(0.5rem, 2vw, 1rem) + 12px);
+    top: max(clamp(0.5rem, 2vw, 1rem), env(safe-area-inset-top));
+    left: auto;
+    right: max(clamp(0.5rem, 2vw, 1rem), env(safe-area-inset-right));
   }
   /* Thumbs fixed at bottom so always above fold (visible in viewport) */
   .vote-buttons {
@@ -286,11 +288,12 @@ main.transition-in .content-text {
   background: #fff;
 }
 
-/* Info icon: upper left corner */
+/* Info icon: upper right corner (below status bar for PWA on iPhone) */
 .info-btn {
   position: fixed;
-  top: clamp(0.5rem, 2vw, 1rem);
-  left: clamp(0.5rem, 2vw, 1rem);
+  top: max(clamp(0.5rem, 2vw, 1rem), env(safe-area-inset-top));
+  right: max(clamp(0.5rem, 2vw, 1rem), env(safe-area-inset-right));
+  left: auto;
   z-index: 20;
   width: 36px;
   height: 36px;
@@ -390,85 +393,3 @@ main.transition-in .content-text {
   background: #f8fafc;
 }
 
-/* Add to Home Screen banner — button row on top, text below */
-.install-banner {
-  position: fixed;
-  bottom: max(1rem, env(safe-area-inset-bottom));
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
-  max-width: min(22rem, 92vw);
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(12px);
-  border-radius: 0.75rem;
-  color: #fff;
-  z-index: 18;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.install-banner.hidden {
-  display: none !important;
-}
-
-.install-banner-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.install-banner-text {
-  margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  text-align: center;
-}
-
-.install-banner-action {
-  flex-shrink: 0;
-  min-width: 44px;
-  min-height: 44px;
-  padding: 0.4rem 0.75rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 0.5rem;
-  background: rgba(255, 255, 255, 0.95);
-  color: #333;
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-
-.install-banner-action:hover {
-  background: #fff;
-}
-
-.install-banner-dismiss {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: color 0.15s ease, background 0.15s ease;
-}
-
-.install-banner-dismiss:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.15);
-}
-
-/* Banner above fixed vote buttons on mobile */
-@media (max-width: 768px) {
-  .install-banner {
-    bottom: calc(max(1rem, env(safe-area-inset-bottom)) + 4rem);
-  }
-}

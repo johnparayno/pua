@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Info icon: upper left corner -->
+  <!-- Info icon: upper right corner (below status bar for PWA on iPhone) -->
   <button id="info-btn" type="button" class="info-btn" aria-label="Show glossary and definitions" aria-expanded="false" aria-haspopup="dialog">
     <span aria-hidden="true">ℹ️</span>
   </button>
@@ -78,14 +78,6 @@
       <button id="retry-vote" type="button" aria-label="Retry vote">Retry vote</button>
     </div>
   </main>
-  <!-- Add to Home Screen prompt (PWA install banner) -->
-  <div id="install-banner" class="install-banner hidden" role="region" aria-label="Add to Home Screen">
-    <div class="install-banner-row">
-      <button id="install-banner-action" type="button" class="install-banner-action">Add</button>
-      <button id="install-banner-dismiss" type="button" class="install-banner-dismiss" aria-label="Dismiss">×</button>
-    </div>
-    <p id="install-banner-text" class="install-banner-text"></p>
-  </div>
   <script src="app.js"></script>
 </body>
 </html>
