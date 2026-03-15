@@ -45,13 +45,11 @@ function normalizeItem(item) {
 /**
  * Fetch one random content item from API.
  * @param {number|null} excludeId - Content item ID to exclude (for no-repeat-in-row)
- * @param {number} [shownCount=0] - Number of items shown so far; first 10 are restricted to ids 136-143
  * @returns {Promise<{id: number, text: string, content_type: string, created_at: string}|null>}
  */
-async function fetchContent(excludeId = null, shownCount = 0) {
+async function fetchContent(excludeId = null) {
   const url = new URL(`${API_BASE}/api/content`);
   if (excludeId != null) url.searchParams.set('exclude_id', excludeId);
-  url.searchParams.set('shown_count', String(shownCount));
   const res = await fetch(url.toString(), { credentials: 'include', cache: 'no-store' });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
@@ -69,22 +67,13 @@ async function loadOfflineContent() {
   return Array.isArray(items) ? items : [];
 }
 
-/** First 10 results must be from ids 136-143 */
-const PRIORITY_ID_MIN = 136;
-const PRIORITY_ID_MAX = 143;
-const PRIORITY_COUNT = 10;
-
 /**
  * Pick random item from array, excluding excludeId.
  * @param {Array} items - Content items
  * @param {number|null} excludeId - ID to exclude
- * @param {boolean} [restrictToPriority=false] - When true, only pick from ids 136-143
  */
-function pickRandom(items, excludeId, restrictToPriority = false) {
-  let filtered = excludeId != null ? items.filter((i) => i.id !== excludeId) : [...items];
-  if (restrictToPriority) {
-    filtered = filtered.filter((i) => i.id >= PRIORITY_ID_MIN && i.id <= PRIORITY_ID_MAX);
-  }
+function pickRandom(items, excludeId) {
+  const filtered = excludeId != null ? items.filter((i) => i.id !== excludeId) : [...items];
   if (filtered.length === 0) return null;
   return normalizeItem(filtered[Math.floor(Math.random() * filtered.length)]);
 }
@@ -245,64 +234,6 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').catch(() => {});
 }
 
-/** Add to Home Screen banner — show after first vote, platform-specific */
-const INSTALL_DISMISSED_KEY = 'pua_install_dismissed';
-
-function isStandalone() {
-  return (
-    window.matchMedia('(display-mode: standalone)').matches ||
-    window.navigator.standalone === true
-  );
-}
-
-function isIOS() {
-  return /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-}
-
-function isMobile() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
-}
-
-function wasInstallDismissed() {
-  try {
-    return localStorage.getItem(INSTALL_DISMISSED_KEY) === '1';
-  } catch {
-    return false;
-  }
-}
-
-function setInstallDismissed() {
-  try {
-    localStorage.setItem(INSTALL_DISMISSED_KEY, '1');
-  } catch (_) {}
-}
-
-function maybeShowInstallBanner(deferredPrompt) {
-  if (isStandalone() || wasInstallDismissed() || !isMobile()) return;
-  const banner = document.getElementById('install-banner');
-  const textEl = document.getElementById('install-banner-text');
-  const actionBtn = document.getElementById('install-banner-action');
-  if (!banner || !textEl || !actionBtn) return;
-
-  if (deferredPrompt) {
-    textEl.textContent = 'Add to home screen for quick access and offline use.';
-    actionBtn.textContent = 'Add';
-  } else if (isIOS()) {
-    textEl.textContent = 'Add to Home Screen: tap Share, then "Add to Home Screen".';
-    actionBtn.textContent = 'Got it';
-  } else {
-    textEl.textContent = 'Add to home screen for quick access and offline use.';
-    actionBtn.textContent = 'Got it';
-  }
-  banner.classList.remove('hidden');
-}
-
-let deferredInstallPrompt = null;
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredInstallPrompt = e;
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('main');
   const contentEl = document.getElementById('content-text');
@@ -320,11 +251,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const boohFeedback = document.getElementById('booh-feedback');
 
   let lastShownId = null;
-  let shownCount = 0; // First 10 results restricted to ids 136-143
   let isTransitioning = false;
   let pendingVote = null; // { id, voteType } for retry
   let offlineContent = []; // Cached for offline use
-  let hasVotedOnce = false; // For install banner: show after first vote
 
   function showState(which) {
     loadingState?.classList.toggle('hidden', which !== 'loading');
@@ -338,7 +267,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function setContent(item) {
     if (!item) return;
     lastShownId = item.id;
-    shownCount++;
     contentEl.textContent = item.text;
     contentEl.setAttribute('data-content-id', item.id);
     const variant = getBackgroundVariantIndex(item.id);
@@ -392,12 +320,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     try {
       if (navigator.onLine && API_BASE) {
-        let item = await fetchContent(lastShownId, shownCount);
+        let item = await fetchContent(lastShownId);
         if (item) {
           showTransition(() => setContent(item));
           return;
         }
-        item = await fetchContent(null, shownCount);
+        item = await fetchContent(null);
         if (item) {
           showTransition(() => setContent(item));
           return;
@@ -407,8 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (offlineContent.length === 0) {
         offlineContent = await loadOfflineContent();
       }
-      const restrictPriority = shownCount < PRIORITY_COUNT;
-      const item = pickRandom(offlineContent, lastShownId, restrictPriority);
+      const item = pickRandom(offlineContent, lastShownId);
       if (item) {
         showTransition(() => setContent(item));
       } else {
@@ -419,8 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (offlineContent.length === 0) {
         try {
           offlineContent = await loadOfflineContent();
-          const restrictPriority = shownCount < PRIORITY_COUNT;
-          const item = pickRandom(offlineContent, lastShownId, restrictPriority);
+          const item = pickRandom(offlineContent, lastShownId);
           if (item) {
             showTransition(() => setContent(item));
             return;
@@ -442,10 +368,6 @@ document.addEventListener('DOMContentLoaded', () => {
         await storeVoteOffline(id, voteType);
       }
       pendingVote = null;
-      if (!hasVotedOnce) {
-        hasVotedOnce = true;
-        maybeShowInstallBanner(deferredInstallPrompt);
-      }
       loadNext(voteType);
     } catch (err) {
       console.error('Vote failed:', err);
@@ -471,10 +393,6 @@ document.addEventListener('DOMContentLoaded', () => {
         await storeVoteOffline(id, voteType);
       }
       pendingVote = null;
-      if (!hasVotedOnce) {
-        hasVotedOnce = true;
-        maybeShowInstallBanner(deferredInstallPrompt);
-      }
       loadNext(voteType);
     } catch (err) {
       console.error('Vote retry failed:', err);
@@ -514,24 +432,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape' && infoOverlay && !infoOverlay.classList.contains('hidden')) {
       closeInfoOverlay();
     }
-  });
-
-  // Install banner: Add to Home Screen
-  const installBanner = document.getElementById('install-banner');
-  const installBannerAction = document.getElementById('install-banner-action');
-  const installBannerDismiss = document.getElementById('install-banner-dismiss');
-  installBannerAction?.addEventListener('click', async () => {
-    if (deferredInstallPrompt) {
-      deferredInstallPrompt.prompt();
-      const { outcome } = await deferredInstallPrompt.userChoice;
-      if (outcome === 'accepted') deferredInstallPrompt = null;
-    }
-    installBanner?.classList.add('hidden');
-    setInstallDismissed();
-  });
-  installBannerDismiss?.addEventListener('click', () => {
-    installBanner?.classList.add('hidden');
-    setInstallDismissed();
   });
 
   // Touch swipe: right = up, left = down
