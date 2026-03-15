@@ -10,7 +10,7 @@
   <title>pua</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icons/icon.svg">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=1.0.3">
 </head>
 <body>
   <!-- Info icon: upper right corner (below status bar for PWA on iPhone) -->
@@ -78,7 +78,8 @@
       <button id="retry-vote" type="button" aria-label="Retry vote">Retry vote</button>
     </div>
   </main>
-  <span class="version" aria-hidden="true">v1.0.1</span>
-  <script src="app.js"></script>
+  <!-- Version: 1.0.3 — update ?v= in link/script, CACHE_NAME in sw.js, and this span when releasing -->
+  <span class="version" aria-hidden="true">v1.0.3</span>
+  <script src="app.js?v=1.0.3"></script>
 </body>
 </html>

@@ -229,9 +229,13 @@ function runConfetti(canvas, durationMs = 1200) {
   requestAnimationFrame(tick);
 }
 
-// Register service worker for PWA
+// Register service worker for PWA — check for updates when app becomes visible
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').catch(() => {});
+  navigator.serviceWorker.register('/sw.js').then((reg) => {
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') reg.update();
+    });
+  }).catch(() => {});
 }
 
 document.addEventListener('DOMContentLoaded', () => {
