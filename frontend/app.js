@@ -45,11 +45,13 @@ function normalizeItem(item) {
 /**
  * Fetch one random content item from API.
  * @param {number|null} excludeId - Content item ID to exclude (for no-repeat-in-row)
+ * @param {number} [shownCount=0] - Number of items shown so far; first 10 are restricted to ids 136-143
  * @returns {Promise<{id: number, text: string, content_type: string, created_at: string}|null>}
  */
-async function fetchContent(excludeId = null) {
+async function fetchContent(excludeId = null, shownCount = 0) {
   const url = new URL(`${API_BASE}/api/content`);
   if (excludeId != null) url.searchParams.set('exclude_id', excludeId);
+  url.searchParams.set('shown_count', String(shownCount));
   const res = await fetch(url.toString(), { credentials: 'include' });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
@@ -67,11 +69,22 @@ async function loadOfflineContent() {
   return Array.isArray(items) ? items : [];
 }
 
+/** First 10 results must be from ids 136-143 */
+const PRIORITY_ID_MIN = 136;
+const PRIORITY_ID_MAX = 143;
+const PRIORITY_COUNT = 10;
+
 /**
  * Pick random item from array, excluding excludeId.
+ * @param {Array} items - Content items
+ * @param {number|null} excludeId - ID to exclude
+ * @param {boolean} [restrictToPriority=false] - When true, only pick from ids 136-143
  */
-function pickRandom(items, excludeId) {
-  const filtered = excludeId != null ? items.filter((i) => i.id !== excludeId) : items;
+function pickRandom(items, excludeId, restrictToPriority = false) {
+  let filtered = excludeId != null ? items.filter((i) => i.id !== excludeId) : [...items];
+  if (restrictToPriority) {
+    filtered = filtered.filter((i) => i.id >= PRIORITY_ID_MIN && i.id <= PRIORITY_ID_MAX);
+  }
   if (filtered.length === 0) return null;
   return normalizeItem(filtered[Math.floor(Math.random() * filtered.length)]);
 }
@@ -142,6 +155,16 @@ async function storeVoteOffline(contentItemId, voteType) {
 function getBackgroundVariantIndex(id) {
   const variants = 6; // matches .bg-variant-0..5 in styles.css
   return (id - 1) % variants;
+}
+
+/** Theme colors per variant (primary/base) — matches status bar to background on mobile */
+const THEME_COLORS = ['#5a67d8', '#ed64a6', '#4299e1', '#48bb78', '#ed8936', '#b2f5ea'];
+
+function setThemeColor(variantIndex) {
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta && THEME_COLORS[variantIndex]) {
+    meta.setAttribute('content', THEME_COLORS[variantIndex]);
+  }
 }
 
 /**
@@ -238,6 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const boohFeedback = document.getElementById('booh-feedback');
 
   let lastShownId = null;
+  let shownCount = 0; // First 10 results restricted to ids 136-143
   let isTransitioning = false;
   let pendingVote = null; // { id, voteType } for retry
   let offlineContent = []; // Cached for offline use
@@ -248,15 +272,19 @@ document.addEventListener('DOMContentLoaded', () => {
     emptyState?.classList.toggle('hidden', which !== 'empty');
     contentBlock?.classList.toggle('hidden', which !== 'content');
     voteErrorOverlay?.classList.toggle('hidden', which !== 'vote-error');
+    if (which !== 'content') setThemeColor(0); /* loading/error/empty use default variant */
   }
 
   function setContent(item) {
     if (!item) return;
     lastShownId = item.id;
+    shownCount++;
     contentEl.textContent = item.text;
     contentEl.setAttribute('data-content-id', item.id);
+    const variant = getBackgroundVariantIndex(item.id);
     main.classList.remove('bg-variant-0', 'bg-variant-1', 'bg-variant-2', 'bg-variant-3', 'bg-variant-4', 'bg-variant-5');
-    main.classList.add(`bg-variant-${getBackgroundVariantIndex(item.id)}`);
+    main.classList.add(`bg-variant-${variant}`);
+    setThemeColor(variant);
     showState('content');
   }
 
@@ -304,12 +332,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     try {
       if (navigator.onLine && API_BASE) {
-        let item = await fetchContent(lastShownId);
+        let item = await fetchContent(lastShownId, shownCount);
         if (item) {
           showTransition(() => setContent(item));
           return;
         }
-        item = await fetchContent(null);
+        item = await fetchContent(null, shownCount);
         if (item) {
           showTransition(() => setContent(item));
           return;
@@ -319,7 +347,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (offlineContent.length === 0) {
         offlineContent = await loadOfflineContent();
       }
-      const item = pickRandom(offlineContent, lastShownId);
+      const restrictPriority = shownCount < PRIORITY_COUNT;
+      const item = pickRandom(offlineContent, lastShownId, restrictPriority);
       if (item) {
         showTransition(() => setContent(item));
       } else {
@@ -330,7 +359,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (offlineContent.length === 0) {
         try {
           offlineContent = await loadOfflineContent();
-          const item = pickRandom(offlineContent, lastShownId);
+          const restrictPriority = shownCount < PRIORITY_COUNT;
+          const item = pickRandom(offlineContent, lastShownId, restrictPriority);
           if (item) {
             showTransition(() => setContent(item));
             return;

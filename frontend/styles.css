@@ -19,7 +19,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: clamp(1rem, 4vw, 2rem);
-  transition: background-color 0.4s ease;
+  transition: background 0.4s ease;
 }
 
 /* Deterministic background variants per content item id */
@@ -30,17 +30,31 @@ main {
 .bg-variant-4 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
 .bg-variant-5 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
 
-/* T022: Mobile - solid backgrounds where gradients reduce readability */
+/* T022: Mobile - mild gradients, thumbs above fold, theme matches background */
 @media (max-width: 768px) {
-  .bg-variant-0 { background: #5a67d8; }
-  .bg-variant-1 { background: #ed64a6; }
-  .bg-variant-2 { background: #4299e1; }
-  .bg-variant-3 { background: #48bb78; }
-  .bg-variant-4 { background: #ed8936; }
-  .bg-variant-5 { background: #b2f5ea; }
+  .bg-variant-0 { background: linear-gradient(180deg, #5a67d8 0%, #6b7de8 50%, #4c5fd8 100%); }
+  .bg-variant-1 { background: linear-gradient(180deg, #ed64a6 0%, #f078b0 50%, #dd5a9c 100%); }
+  .bg-variant-2 { background: linear-gradient(180deg, #4299e1 0%, #5aa8e8 50%, #3690d8 100%); }
+  .bg-variant-3 { background: linear-gradient(180deg, #48bb78 0%, #5ac88a 50%, #3aa868 100%); }
+  .bg-variant-4 { background: linear-gradient(180deg, #ed8936 0%, #f09a50 50%, #dd7a26 100%); }
+  .bg-variant-5 { background: linear-gradient(180deg, #b2f5ea 0%, #c4f8ef 50%, #a0e8dc 100%); }
   /* Info icon: push down to avoid iPhone notch/safe area */
   .info-btn {
     top: calc(clamp(0.5rem, 2vw, 1rem) + 12px);
+  }
+  /* Thumbs fixed at bottom so always above fold (visible in viewport) */
+  .vote-buttons {
+    position: fixed;
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+    z-index: 15;
+  }
+  main {
+    padding-bottom: 6rem; /* space for fixed thumbs */
+    padding-top: env(safe-area-inset-top); /* match content to safe area under notch */
   }
 }
 
