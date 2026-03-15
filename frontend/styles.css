@@ -38,6 +38,10 @@ main {
   .bg-variant-3 { background: #48bb78; }
   .bg-variant-4 { background: #ed8936; }
   .bg-variant-5 { background: #b2f5ea; }
+  /* Info icon: push down to avoid iPhone notch/safe area */
+  .info-btn {
+    top: calc(clamp(0.5rem, 2vw, 1rem) + 12px);
+  }
 }
 
 /* Quote-style content block */
@@ -85,9 +89,14 @@ main {
 }
 
 .vote-buttons button {
-  min-width: 44px;
-  min-height: 44px;
-  padding: 0.75rem 1.25rem;
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.75rem;
   border: none;
   border-radius: 50%;
