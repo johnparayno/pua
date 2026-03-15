@@ -52,7 +52,7 @@ async function fetchContent(excludeId = null, shownCount = 0) {
   const url = new URL(`${API_BASE}/api/content`);
   if (excludeId != null) url.searchParams.set('exclude_id', excludeId);
   url.searchParams.set('shown_count', String(shownCount));
-  const res = await fetch(url.toString(), { credentials: 'include' });
+  const res = await fetch(url.toString(), { credentials: 'include', cache: 'no-store' });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
   return res.json();
@@ -63,7 +63,7 @@ async function fetchContent(excludeId = null, shownCount = 0) {
  * @returns {Promise<Array<{id: number, text: string}>>}
  */
 async function loadOfflineContent() {
-  const res = await fetch('/content.json');
+  const res = await fetch('/content.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('Offline content unavailable');
   const items = await res.json();
   return Array.isArray(items) ? items : [];
@@ -100,6 +100,7 @@ async function postVote(contentItemId, voteType) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     credentials: 'include',
+    cache: 'no-store',
     body: JSON.stringify({
       content_item_id: contentItemId,
       vote_type: voteType,

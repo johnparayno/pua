@@ -1,7 +1,7 @@
 /**
  * Service worker for pua PWA — offline caching
  */
-const CACHE_NAME = 'pua-v1';
+const CACHE_NAME = 'pua-v2';
 const ASSETS = [
   '/',
   '/index.html',
@@ -37,6 +37,22 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(request.url);
   if (url.origin !== location.origin) return;
   if (!url.pathname.startsWith('/') || url.pathname.startsWith('/api/')) return;
+
+  // Network-first for content.json so we get fresh data when online
+  if (url.pathname === '/content.json') {
+    e.respondWith(
+      fetch(request)
+        .then((res) => {
+          if (res.ok) {
+            const clone = res.clone();
+            caches.open(CACHE_NAME).then((c) => c.put(request, clone));
+          }
+          return res;
+        })
+        .catch(() => caches.match(request))
+    );
+    return;
+  }
 
   e.respondWith(
     caches.match(request).then((cached) => {

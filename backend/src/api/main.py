@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from typing import Optional
 
-from fastapi import Depends, FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, HTTPException, Query, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -77,9 +77,11 @@ DEBOUNCE_WINDOW_SECONDS = 1
 
 @app.get("/api/content", response_model=ContentResponse)
 def get_content(
+    response: Response,
     exclude_id: Optional[int] = Query(None, description="Content item ID to exclude"),
     db: Session = Depends(get_db),
 ):
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate"
     item = get_random_content(db, exclude_id)
     if item is None:
         raise HTTPException(status_code=404, detail="No content available")
@@ -88,9 +90,11 @@ def get_content(
 
 @app.post("/api/votes", response_model=VoteResponse)
 def create_vote(
+    response: Response,
     body: VoteRequest,
     db: Session = Depends(get_db),
 ):
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate"
     if body.vote_type not in ("up", "down"):
         raise HTTPException(
             status_code=400,

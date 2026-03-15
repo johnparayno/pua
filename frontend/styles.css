@@ -390,13 +390,14 @@ main.transition-in .content-text {
   background: #f8fafc;
 }
 
-/* Add to Home Screen banner */
+/* Add to Home Screen banner — button row on top, text below */
 .install-banner {
   position: fixed;
   bottom: max(1rem, env(safe-area-inset-bottom));
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
@@ -413,11 +414,17 @@ main.transition-in .content-text {
   display: none !important;
 }
 
+.install-banner-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .install-banner-text {
-  flex: 1;
   margin: 0;
   font-size: 0.875rem;
   line-height: 1.4;
+  text-align: center;
 }
 
 .install-banner-action {
