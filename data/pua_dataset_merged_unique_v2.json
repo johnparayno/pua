@@ -1,0 +1,577 @@
+[
+  {
+    "id": 1,
+    "text": "Nice shoes. Did you choose those yourself?"
+  },
+  {
+    "id": 2,
+    "text": "Nice jacket. My little cousin has one like that."
+  },
+  {
+    "id": 3,
+    "text": "Nice style. That\u2019s a confident choice."
+  },
+  {
+    "id": 4,
+    "text": "Nice hair. Did it start like that?"
+  },
+  {
+    "id": 5,
+    "text": "Nice glasses. Are those part of the look?"
+  },
+  {
+    "id": 6,
+    "text": "Nice watch. Is it mostly decorative?"
+  },
+  {
+    "id": 7,
+    "text": "Nice outfit. That\u2019s bold."
+  },
+  {
+    "id": 8,
+    "text": "Nice smile. Do you practice that?"
+  },
+  {
+    "id": 9,
+    "text": "Nice nails. Did you do them yourself?"
+  },
+  {
+    "id": 10,
+    "text": "Nice earrings. Are those ironic?"
+  },
+  {
+    "id": 11,
+    "text": "Nice shoes. Comfortable at least?"
+  },
+  {
+    "id": 12,
+    "text": "Nice jacket. That\u2019s definitely a vibe."
+  },
+  {
+    "id": 13,
+    "text": "Nice shirt. That\u2019s a statement."
+  },
+  {
+    "id": 14,
+    "text": "Nice bag. Does it come with stories?"
+  },
+  {
+    "id": 15,
+    "text": "Nice outfit. You look confident wearing that."
+  },
+  {
+    "id": 16,
+    "text": "Nice haircut. That must take commitment."
+  },
+  {
+    "id": 17,
+    "text": "Nice look. That\u2019s memorable."
+  },
+  {
+    "id": 18,
+    "text": "Nice boots. You look ready for trouble."
+  },
+  {
+    "id": 19,
+    "text": "Nice jacket. That\u2019s expressive."
+  },
+  {
+    "id": 20,
+    "text": "Nice style. That\u2019s\u2026 unique."
+  },
+  {
+    "id": 21,
+    "text": "Nice hair. Is it real?"
+  },
+  {
+    "id": 22,
+    "text": "Nice hair. Did it always look like that?"
+  },
+  {
+    "id": 23,
+    "text": "Nice eyelashes. Are those real?"
+  },
+  {
+    "id": 24,
+    "text": "Nice tan. Is that natural?"
+  },
+  {
+    "id": 25,
+    "text": "Nice nails. Are those yours?"
+  },
+  {
+    "id": 26,
+    "text": "Nice curls. Did you wake up like that?"
+  },
+  {
+    "id": 27,
+    "text": "Nice highlights. Was that intentional?"
+  },
+  {
+    "id": 28,
+    "text": "Nice makeup. That must take practice."
+  },
+  {
+    "id": 29,
+    "text": "Nice eyebrows. Did you do those yourself?"
+  },
+  {
+    "id": 30,
+    "text": "Nice perfume. That\u2019s\u2026 strong."
+  },
+  {
+    "id": 31,
+    "text": "Nice shoes. Did you borrow those?"
+  },
+  {
+    "id": 32,
+    "text": "Nice outfit. Is that your usual style?"
+  },
+  {
+    "id": 33,
+    "text": "Nice ring. Is that part of the look?"
+  },
+  {
+    "id": 34,
+    "text": "Nice hair. That must take maintenance."
+  },
+  {
+    "id": 35,
+    "text": "Nice jacket. That\u2019s definitely a choice."
+  },
+  {
+    "id": 36,
+    "text": "Nice smile. Is that your default setting?"
+  },
+  {
+    "id": 37,
+    "text": "Nice nails. That must take patience."
+  },
+  {
+    "id": 38,
+    "text": "Nice lipstick. Is that the bold version?"
+  },
+  {
+    "id": 39,
+    "text": "Nice style. Do people usually notice it?"
+  },
+  {
+    "id": 40,
+    "text": "Nice watch. Is that mostly for show?"
+  },
+  {
+    "id": 41,
+    "text": "Okay let me guess \u2014 who's the fun one in your group?"
+  },
+  {
+    "id": 42,
+    "text": "Wait, which one of you is the responsible one?"
+  },
+  {
+    "id": 43,
+    "text": "Let me guess \u2014 you're the troublemaker and she's the responsible one."
+  },
+  {
+    "id": 44,
+    "text": "Okay who\u2019s the leader in your group?"
+  },
+  {
+    "id": 45,
+    "text": "Which one of you gets everyone into trouble?"
+  },
+  {
+    "id": 46,
+    "text": "Who\u2019s the one who convinces everyone to stay out?"
+  },
+  {
+    "id": 47,
+    "text": "Who\u2019s the bad influence here?"
+  },
+  {
+    "id": 48,
+    "text": "Let me guess \u2014 you're the wild one."
+  },
+  {
+    "id": 49,
+    "text": "Which one of you is the sensible friend?"
+  },
+  {
+    "id": 50,
+    "text": "Who\u2019s the one with the bad ideas?"
+  },
+  {
+    "id": 51,
+    "text": "Which one of you starts the chaos?"
+  },
+  {
+    "id": 52,
+    "text": "Let me guess \u2014 you're the quiet dangerous one."
+  },
+  {
+    "id": 53,
+    "text": "Who\u2019s the responsible adult here?"
+  },
+  {
+    "id": 54,
+    "text": "Which one of you is the voice of reason?"
+  },
+  {
+    "id": 55,
+    "text": "Which one of you gets bored first?"
+  },
+  {
+    "id": 56,
+    "text": "Let me guess \u2014 you're the dramatic one."
+  },
+  {
+    "id": 57,
+    "text": "Who\u2019s the unpredictable one?"
+  },
+  {
+    "id": 58,
+    "text": "Which one of you talks the most?"
+  },
+  {
+    "id": 59,
+    "text": "Who\u2019s the one who escalates things?"
+  },
+  {
+    "id": 60,
+    "text": "Let me guess \u2014 you're the instigator."
+  },
+  {
+    "id": 61,
+    "text": "You seem like a bad idea."
+  },
+  {
+    "id": 62,
+    "text": "You seem fun, but exhausting."
+  },
+  {
+    "id": 63,
+    "text": "You seem interesting\u2026 and slightly dangerous."
+  },
+  {
+    "id": 64,
+    "text": "You seem like trouble waiting to happen."
+  },
+  {
+    "id": 65,
+    "text": "You seem like chaos in human form."
+  },
+  {
+    "id": 66,
+    "text": "You seem like someone people regret following."
+  },
+  {
+    "id": 67,
+    "text": "You seem like someone who escalates everything."
+  },
+  {
+    "id": 68,
+    "text": "You seem like someone who collects drama."
+  },
+  {
+    "id": 69,
+    "text": "You seem like someone who enjoys pushing limits."
+  },
+  {
+    "id": 70,
+    "text": "You seem like someone who enjoys risky ideas."
+  },
+  {
+    "id": 71,
+    "text": "You seem like someone who gets people into trouble."
+  },
+  {
+    "id": 72,
+    "text": "You seem like someone who tests patience."
+  },
+  {
+    "id": 73,
+    "text": "You seem like someone who causes interesting problems."
+  },
+  {
+    "id": 74,
+    "text": "You seem like someone who enjoys being difficult."
+  },
+  {
+    "id": 75,
+    "text": "You seem like someone who enjoys stirring the pot."
+  },
+  {
+    "id": 76,
+    "text": "You seem like someone who enjoys chaos more than peace."
+  },
+  {
+    "id": 77,
+    "text": "You seem like someone who starts stories."
+  },
+  {
+    "id": 78,
+    "text": "You seem like someone who enjoys challenging people."
+  },
+  {
+    "id": 79,
+    "text": "You seem like someone who refuses boring nights."
+  },
+  {
+    "id": 80,
+    "text": "You seem like someone who makes things unpredictable."
+  },
+  {
+    "id": 81,
+    "text": "Nice nails. Are those real?"
+  },
+  {
+    "id": 82,
+    "text": "Nice hair. Is that all yours?"
+  },
+  {
+    "id": 83,
+    "text": "That\u2019s a cute jacket. My little sister has one like it."
+  },
+  {
+    "id": 84,
+    "text": "You look adorable\u2026 almost."
+  },
+  {
+    "id": 85,
+    "text": "That\u2019s a bold outfit. I respect the confidence."
+  },
+  {
+    "id": 86,
+    "text": "You seem sweet. I\u2019ll try not to corrupt you."
+  },
+  {
+    "id": 87,
+    "text": "You look like trouble. I should probably avoid you."
+  },
+  {
+    "id": 88,
+    "text": "You look like someone who gets bored easily."
+  },
+  {
+    "id": 89,
+    "text": "You seem like the type who causes drama and then blames someone else."
+  },
+  {
+    "id": 90,
+    "text": "You seem like you\u2019d argue just for fun."
+  },
+  {
+    "id": 91,
+    "text": "Wait, let me guess \u2014 you\u2019re the troublemaker in your group."
+  },
+  {
+    "id": 92,
+    "text": "Okay, which one of you is the bad influence?"
+  },
+  {
+    "id": 93,
+    "text": "Let me guess \u2014 you\u2019re the one who convinces everyone to stay out late."
+  },
+  {
+    "id": 94,
+    "text": "Wait, who\u2019s the responsible one here?"
+  },
+  {
+    "id": 95,
+    "text": "You look like the unpredictable one."
+  },
+  {
+    "id": 96,
+    "text": "You seem like someone I shouldn\u2019t trust with bad ideas."
+  },
+  {
+    "id": 97,
+    "text": "You seem fun\u2026 but dangerous."
+  },
+  {
+    "id": 98,
+    "text": "You seem like someone who escalates things quickly."
+  },
+  {
+    "id": 99,
+    "text": "You seem like chaos disguised as a good idea."
+  },
+  {
+    "id": 100,
+    "text": "You seem like someone who enjoys trouble."
+  },
+  {
+    "id": 101,
+    "text": "You're really cute... but you have something on your tooth."
+  },
+  {
+    "id": 102,
+    "text": "That's a nice outfit. My aunt has one just like it."
+  },
+  {
+    "id": 103,
+    "text": "You're not my type... you're better."
+  },
+  {
+    "id": 104,
+    "text": "Who lied to you and told you that you were pretty?"
+  },
+  {
+    "id": 105,
+    "text": "Did you see that? That guy just tried to steal your drink, I had to stop him."
+  },
+  {
+    "id": 106,
+    "text": "I know this is sudden, but I saw you from over there and wanted to say hi."
+  },
+  {
+    "id": 107,
+    "text": "I'm going to be honest, I'm a bit nervous, but I had to come say hi."
+  },
+  {
+    "id": 108,
+    "text": "You look super fun."
+  },
+  {
+    "id": 109,
+    "text": "Interesting necklace. Where did you get it? My sister has been looking for one like that."
+  },
+  {
+    "id": 110,
+    "text": "Is that drink any good? I was thinking about ordering it next time."
+  },
+  {
+    "id": 111,
+    "text": "I know we just made eye contact, but I'm mentally naming our future dog."
+  },
+  {
+    "id": 112,
+    "text": "You're hot."
+  },
+  {
+    "id": 113,
+    "text": "I was going to mind my business but then you showed up."
+  },
+  {
+    "id": 114,
+    "text": "Do I know you? You look like someone I should know."
+  },
+  {
+    "id": 115,
+    "text": "Aside from being attractive, what do you do for a living?"
+  },
+  {
+    "id": 116,
+    "text": "Hey, you're pretty and I'm cute. Together we'd be pretty cute."
+  },
+  {
+    "id": 117,
+    "text": "You seem... interesting."
+  },
+  {
+    "id": 118,
+    "text": "You have the funniest expressions."
+  },
+  {
+    "id": 119,
+    "text": "You're trouble."
+  },
+  {
+    "id": 120,
+    "text": "You're actually kinda cute."
+  },
+  {
+    "id": 121,
+    "text": "You're actually pretty okay... I didn't expect to like you at first."
+  },
+  {
+    "id": 122,
+    "text": "Stop looking at me like that."
+  },
+  {
+    "id": 123,
+    "text": "I'm going to pretend you didn't just say that because I'm enjoying liking you."
+  },
+  {
+    "id": 124,
+    "text": "You won't get into my pants if you keep doing that."
+  },
+  {
+    "id": 125,
+    "text": "Damn... please stop being so cute."
+  },
+  {
+    "id": 126,
+    "text": "I'm not going to sleep with you tonight."
+  },
+  {
+    "id": 127,
+    "text": "You would make a great girlfriend... if you weren't so pushy."
+  },
+  {
+    "id": 128,
+    "text": "I kind of want to have breakfast with you."
+  },
+  {
+    "id": 129,
+    "text": "I kind of want to make you my favorite person in this city."
+  },
+  {
+    "id": 130,
+    "text": "I have to ask you something important: do you sleep on the left or the right side of the bed?"
+  },
+  {
+    "id": 131,
+    "text": "I feel like there's some weird energy between us."
+  },
+  {
+    "id": 132,
+    "text": "What are we supposed to do with this energy between us?"
+  },
+  {
+    "id": 133,
+    "text": "I have to go back to my friends, but this conversation is getting interesting."
+  },
+  {
+    "id": 134,
+    "text": "It's a shame there are so many people here, it's hard to focus on this conversation."
+  },
+  {
+    "id": 135,
+    "text": "There's something attractive about you but I'm not sure what it is."
+  },
+  {
+    "id": 136,
+    "text": "Are you a Christmas Tree? Cause i want to put my balls on you"
+  },
+  {
+    "id": 137,
+    "text": "As long as I have a face, you’ll have a place to sit."
+  },
+  {
+    "id": 138,
+    "text": "Am I going to eat that (Point at her down below lady parts)"
+  },
+  {
+   "id": 139,
+   "text": "Lets play Titantic. When I say iceberg, you go down."
+  },
+  {
+   "id": 140,
+   "text": "I got a knife and a penis, one of them is going in you tonight."
+  },
+  {
+   "id": 141,
+   "text": "Ich habe ein Geschenk für dich, in meiner Hose!"
+  },
+  {
+   "id": 142,
+   "text": "You know what I like in a girl? My dick."
+  },
+  {
+    "id": 143,
+     "text": "I’ll give you a nickel if you tickle my pickle."
+   }
+ 
+ 
+ 
+]
